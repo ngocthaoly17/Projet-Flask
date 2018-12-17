@@ -1,0 +1,171 @@
+
+  {% extends "layout.html"%}
+  {% block content %}
+
+<body>
+	<section class="about-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>About me</b></h3>
+
+
+            <!-- {%if name == "Thao"%}
+            <h2> Salut {{ name }} ca faisait longtemps!</h2>
+            {% else %}
+            <h2> Salut mon nouvel ami </h2>
+            {% endif %}""" -->
+
+
+						<h6 class="font-lite-black"><b></b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<p class="margin-b-50">Student in Digital Marketing & Data Science I enjoy learning more about innovative technologies and data driven marketing.
+					I'm not just interested about data but IT in a whole, from infrastructure network to web development and data science.
+					I like the large field of computer science.
+
+				  Mastering in marketing and data analysis mean a lot to me as I started to get passionate on understanding datas and how it could be useful to understand problems, issues and globally speaking, environment. Data can't be put aside as it is the key of every decision. </p>
+
+					</div><!-- row -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+	</section><!-- about-section -->
+
+	<section class="experience-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Education</b></h3>
+						<h6 class="font-lite-black"><b</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+
+					<div class="experience margin-b-50">
+						<h4><b>JEDHA</b></h4>
+						<h5 class="font-yellow"><b>Data Science</b></h5>
+						<h6 class="margin-t-10">October 2018 - January 2019</h6>
+						<p class="font-semi-white margin-tb-30">Data Science Bootcamp</p>
+						<ul class="list margin-b-30">
+							<li>Python, jupyther notebook/spyder </li>
+							<li>DataVizualisation with Seaborn/Matplotlib and Tableau </li>
+							<li>Machine Learning, Deep Learning,</li>
+							<li>Web Development with Python and Flask,</li>
+							<li>Big Data</li>
+						</ul>
+					</div><!-- experience -->
+
+					<div class="experience margin-b-50">
+						<h4><b>EMLV/ IIM Pôle Universitaire Léonard de Vinci</b></h4>
+						<h5 class="font-yellow"><b>Marketing Digital/Data Analytic Bac+4</b></h5>
+						<h6 class="margin-t-10">September 2017 - July 2018</h6>
+						<p class="font-semi-white margin-tb-30">Master EMLV/IIM - Business School Léonard de Vinci </p>
+						<ul class="list margin-b-30">
+							<li>Design (Photoshop, storytelling), </li>
+							<li>Web Development (Front, JavaScript, PHP MySQL…), </li>
+							<li>Marketing digital (SEO, SEA, CRM, SMO...), </li>
+							<li>Big Data (Big Data Strategy, Big Data Frameworks …) etc. </li>
+						</ul>
+					</div>
+
+					<div class="experience margin-b-50">
+						<h4><b>ESGCI</b></h4>
+						<h5 class="font-yellow"><b>Marketing, International Relations Bac+3</b></h5>
+						<h6 class="margin-t-10">September 2016 - July 2017</h6>
+						<p class="font-semi-white margin-tb-30">Bachelor ESGCI - Business School  </p>
+						<ul class="list margin-b-30">
+							<li>International Business Law, </li>
+							<li>International Marketing, </li>
+							<li>Business Development, </li>
+							<li>Geopolitics,</li>
+							<li>Accountancy etc.</li>
+						</ul>
+					</div>
+					<!-- experience -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+
+	</section><!-- experience-section -->
+
+	<section class="education-section section" style="border-bottom: 1px solid #ecebeb;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Experiences</b></h3>
+						<h6 class="font-lite-black"><b></b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>Findoc UK</b></h4>
+							<h5 class="font-yellow"><b>Community Manager</b></h5>
+							<h6 class="font-lite-black margin-t-10">2017</h6>
+							<p>I have worked for Findoc UK as a community manager. Findoc is a plateform that put doctors and patient in relation.
+							</p>
+
+						</div><!-- education -->
+
+						<div class="education margin-b-50">
+							<h4><b>SNG Shinjuku Nihongo Gakkou</b></h4>
+							<h5 class="font-yellow"><b>Assistant Manager</b></h5>
+							<h6 class="font-lite-black margin-t-10">2016</h6>
+
+						</div><!-- education -->
+
+						<div class="education margin-b-50">
+							<h4><b>Instituto Alcala de Henares</b></h4>
+							<h5 class="font-yellow"><b>Assistant Manager</b></h5>
+							<h6 class="font-lite-black margin-t-10">2015</h6>
+
+						</div><!-- education -->
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- about-section -->
+
+	<!-- formulaire -->
+
+  <h1 style="font-size: 2em;padding-top: 30px; text-align:center;">Do not hesitate to leave a message!</h1>
+
+<section class="formulaire d-flex justify-content-center" style="width:100%; padding-top: 35px;">
+	<form method="POST" action="{{url_for('project')}}" style="width: 30%;">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="inputCity">First Name</label>
+          <input type="text" class="form-control" id="inputCity" name="prenom_utilisateur">
+        </div>
+
+        <div class="form-group">
+          <label for="inputZip">Last Name</label>
+          <input type="text" class="form-control" id="inputZip" name="nom_utilisateur">
+        </div>
+
+        <div class="form-group">
+          <label for="inputZip">Your message</label>
+          <input type="textarea" name="name" class="form-control" id="inputZip" name="message">
+        </div>
+
+      </div>
+      <div class="form-group">
+    		<div class="pb-5 pl-3">
+    		<button type="submit" class="btn btn-primary">Sign in</button>
+    		</div>
+      </div>
+    </form>
+  </section>
+</body>
+
+  {% endblock %}

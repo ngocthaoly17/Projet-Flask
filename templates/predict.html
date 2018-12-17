@@ -1,0 +1,12 @@
+{% extends "layout.html"%}
+{% block content %}
+
+<div class="">
+  <h1>Voici le salaire que je predis pour la {{ xp }} année d'experiences </h1>
+  <p> {{ y_pred }} $ par an</p>
+</div>
+
+<input type="button" name="button" href="{{ url_for('project')}}" value="retour">
+
+
+{% endblock %}
